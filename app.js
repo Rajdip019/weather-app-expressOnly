@@ -34,8 +34,10 @@ app.post("/", function (req, res) {
             res.write("<style>header{text-align: center; font-size: 4rem; padding: 1rem;background: rgba(0, 247, 255, 0.123); box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );backdrop-filter: blur( 6px ); -webkit-backdrop-filter: blur( 6px );border-radius: 10px;color: black;font-weight: bolder; }</style>")
             res.write("<style>.form{background: rgba( 255, 255, 255, 0.4 ); box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );backdrop-filter: blur( 6px );-webkit-backdrop-filter: blur( 6px );border-radius: 10px; max-width: 50rem; margin-left: auto;margin-right: auto;padding: 2rem; }.form h1{padding: 1rem 0rem}</style>")
             res.write("<style>.main{height: 49.55vh;text-align: center; justify-content: center;padding: 10rem 0;}</style>")
+            res.write("<style>footer{text-align: center;background-color: black; color: white; height: 5vh;line-height: 5vh; }</style>");
             res.write("<header> Weather App</header>");
             res.write("<div class='main'><div class='form'><h1>The temperature in "+palce+ " is: " + temp + " Degree celcius.</h1><h3>The Weather Currently is: " + weatherData.weather[0].description+ ". </h3><img src=" + imageURL + "></div></div>");
+            res.write("<footer>Copyright &copy; 2021 | Build by Rajdeep Sengupta with Love.</footer>")
             res.send();
         })
 
