@@ -1,6 +1,7 @@
 const express = require("express");
 const https = require('https');
 const bodyParser = require("body-parser")
+const dotenv= require("dotenv").config();
 
 
 const app = express();
@@ -19,7 +20,7 @@ app.get("/", function (req, res) {
 app.post("/", function (req, res) {
     console.log(req.body.cityName);
     const palce = req.body.cityName;
-    const ApiKey = "d7206a4b3c83ef87092b0e1d92e8f21d";
+    const ApiKey = process.env.API_KEY;
     const url = "https://api.openweathermap.org/data/2.5/weather?q="+palce+"&APPID="+ApiKey+"&units=metric"
     https.get(url, function (response) {
         console.log(response.statusCode);
