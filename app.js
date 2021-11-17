@@ -36,7 +36,7 @@ app.post("/", function (req, res) {
             res.write("<style>.min-max{width: 25rem}.flex{display: flex;}h3{padding: 0.5rem; }footer{text-align: center;background-color: black; color: white; height: 5vh;line-height: 5vh; }</style>");
             res.write("<header> Weather App</header>");
             res.write("<div class='main'><div class='form'><h1>Check The City Name Again.</h1><h3> No Such City Available.</h3>");
-            res.write("<div class='new_loc_btn'><form action='/new-serach' method='post'><button type='submit'>Search New Loaction</button></form></div></div></div>")
+            res.write("<div class='new_loc_btn'><form action='/new-serach' method='post'><button type='submit'>Search New Lcation</button></form></div></div></div>")
             res.write("<footer>Copyright &copy; 2021 | Build by Rajdeep Sengupta with &#10084;.</footer>");
             res.send();
         }
@@ -61,7 +61,7 @@ app.post("/", function (req, res) {
             res.write("<style>.new_loc_btn form button{padding: 0.4rem;font-size: 1.25rem;background-color: rgba(0, 234, 255, 0.589);border-radius: 10px;border-color: transparent;font-weight: 900;cursor: pointer;}</style>")
             res.write("<header> Weather App</header>");
             res.write("<div class='main'><div class='form'><h1>The temperature in "+palce+ " is: " + temp + " &#8451;</h1><h3>The Temp Feels like: "+feels_like+"&#8451;</h3><h3>The Weather Currently is: " + weatherData.weather[0].description+ ". </h3><img src=" + imageURL + "><div class='flex'><div class='min-max'><h3>Min Temp: "+temp_min+ " &#8451;</h3></div><div class='min-max'><h3>Max Temp: "+temp_max+ " &#8451;</h3></div></div><div class='flex'><div class='min-max'><h3>Humidity: "+humidity+ "%</h3></div><div class='min-max'><h3>Presure: "+pressure+ "bar</h3></div></div>");
-            res.write("<div class='new_loc_btn'><form action='/new-serach' method='post'><button type='submit'>Search New Loaction</button></form></div></div></div>")
+            res.write("<div class='new_loc_btn'><form action='/new-serach' method='post'><button type='submit'>Search New Location</button></form></div></div></div>")
             res.write("<footer>Copyright &copy; 2021 | Build by Rajdeep Sengupta with &#10084;.</footer>");
             res.send();
         })
