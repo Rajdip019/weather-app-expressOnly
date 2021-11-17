@@ -49,6 +49,7 @@ body{
     border-radius: 10px;
     border-color: transparent;
     font-weight: 900;
+    cursor: pointer;
 }
 .form{
     background: rgba( 255, 255, 255, 0.4 );
