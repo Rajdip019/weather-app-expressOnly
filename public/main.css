@@ -24,7 +24,7 @@ body{
     
 .main{
    
-   height: 49.55vh;
+   min-height: 49.55vh;
    text-align: center;
    justify-content: center;
     padding: 10rem 0;
@@ -69,4 +69,17 @@ footer{
     color: white;
     height: 5vh;
     line-height: 5vh;
+}
+h2{
+    padding: 1rem;
+}
+
+.main button{
+    padding: 0.4rem;
+    font-size: 1.25rem;
+    background-color: rgba(0, 234, 255, 0.589);
+    border-radius: 10px;
+    border-color: transparent;
+    font-weight: 900;
+    cursor: pointer;
 }
